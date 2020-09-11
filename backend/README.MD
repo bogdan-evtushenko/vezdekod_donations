@@ -12,8 +12,8 @@
 # routes:
 ## main API POINT: http://161.35.21.226:3000/api/android/
 
-* Route GET: http://161.35.21.226:3000/api/android/?userId=<number>
-Без параметров получаем массив всех записей
+* Route GET: http://161.35.21.226:3000/api/android/?userId= 1 
+Без параметров получаем массив всех записей  
 C параметров записи конкретного пользователя
 response: 
 
