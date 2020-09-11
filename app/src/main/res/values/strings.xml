@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">VKDonations</string>
-    <string name="donations">Donations</string>
-    <string name="create_post">Create post</string>
-    <string name="be_the_first">Be the first</string>
-    <string name="create_donation">Create donation</string>
-    <string name="help">Help</string>
-    <string name="you_have_no_donations_start_a_good_deed">You have no donations.\n Start a good deed.</string>
-</resources>
