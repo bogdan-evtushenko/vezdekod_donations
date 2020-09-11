@@ -2,13 +2,37 @@
     <string name="app_name">VKDonations</string>
     <string name="donations">Donations</string>
     <string name="create_post">Create post</string>
+    <string name="continue_">Continue</string>
     <string name="be_the_first">Be the first</string>
     <string name="create_donation">Create donation</string>
     <string name="help">Help</string>
     <string name="you_have_no_donations_start_a_good_deed">You have no donations.\n Start a good deed.</string>
     <string name="donation_with_goal">Donation with goal</string>
+    <string name="main">Main</string>
+    <string name="additionally">Additionally</string>
     <string name="when_you_have_a_goal">When you have a goal</string>
     <string name="regular_donation">Regular donation</string>
     <string name="if_help_need_monthly">If help need monthly</string>
     <string name="type_of_donation">Type of donation</string>
+    <string name="title_of_donation">Title of donation</string>
+    <string name="author">Author</string>
+    <string name="choose_correct_date">Choose correct date.</string>
+    <string name="choose_when_donation_will_end">Choose when donation will end.</string>
+
+    <string name="sum_in_rubles">Sum in rubles</string>
+    <string name="how_much_to_collect">How much to collect</string>
+    <string name="how_much_in_month">How much in month</string>
+
+    <string name="goal">Goal</string>
+    <string name="description">Description</string>
+    <string name="where_to_get_money">Where to get money</string>
+    <string name="for_example_for_human_treatment">For example for human treatment</string>
+    <string name="description_hint">What will the money go to and how will it help someone?</string>
+    <string name="description_regular_hint">For example, support for a shelter</string>
+    <string name="donation_will_end">Donation will end</string>
+    <string name="when_we_collect_the_amount">When we collect the amount</string>
+    <string name="on_a_certain_date">On a certain date</string>
+    <string name="expiration_date">Expiration date</string>
+    <string name="select_date">Select date</string>
+
 </resources>

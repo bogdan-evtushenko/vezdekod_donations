@@ -1,10 +1,7 @@
 package com.example.vkdonations
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.vkdonations.epoxy.BaseEpoxyController
-import com.example.vkdonations.models.Donation
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_create_post.*
 
 class CreatePostActivity : AppCompatActivity() {
@@ -12,13 +9,6 @@ class CreatePostActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_post)
 
-        btnDonations.setOnClickListener {
-            startActivity(
-                Intent(
-                    this,
-                    MyDonationsActivity::class.java
-                )
-            )
-        }
+        btnClose.setOnClickListener { finish() }
     }
 }

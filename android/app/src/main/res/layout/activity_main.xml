@@ -7,14 +7,14 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnCreatePost"
+        android:id="@+id/btnDonations"
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/button_blue_ripple_rounded_8"
-        android:text="@string/create_post"
+        android:text="@string/donations"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"

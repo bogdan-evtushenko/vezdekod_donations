@@ -10,6 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnCreatePost.setOnClickListener { startActivity(Intent(this, CreatePostActivity::class.java)) }
+        btnDonations.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    MyDonationsActivity::class.java
+                )
+            )
+        }
     }
 }

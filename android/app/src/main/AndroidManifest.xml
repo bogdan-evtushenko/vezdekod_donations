@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreateDonationWithGoalActivity"></activity>
+        <activity android:name=".CreateRegularDonationActivity" />
+        <activity android:name=".CreateDonationWithGoalAdditionalActivity" />
+        <activity android:name=".CreateDonationWithGoalMainActivity" />
         <activity android:name=".ChooseTypeDonationActivity" />
         <activity android:name=".MyDonationsActivity" />
         <activity android:name=".CreatePostActivity" />

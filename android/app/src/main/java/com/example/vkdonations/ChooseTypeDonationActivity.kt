@@ -15,8 +15,11 @@ class ChooseTypeDonationActivity : AppCompatActivity() {
         tvTitle.text = getString(R.string.type_of_donation)
 
         cvDonationWithGoal.setOnClickListener {
-            startActivity(Intent(this, CreateDonationWithGoalActivity::class.java))
+            startActivity(Intent(this, CreateDonationWithGoalMainActivity::class.java))
         }
-        cvRegularDonation.setOnClickListener { println("regular") }
+        ivBack.setOnClickListener { finish() }
+        cvRegularDonation.setOnClickListener {
+            startActivity(Intent(this, CreateRegularDonationActivity::class.java))
+        }
     }
 }
