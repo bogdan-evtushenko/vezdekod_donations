@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  VKDonations
+
+  Created by Den Matyash on 11.09.2020.
+  Copyright © 2020 Den. All rights reserved.
+*/
+"donations_explanation" = "У Вас пока нет сборов.\nНачните доброе дело.";
+"News" = "Новости";
+"donations" = "Пожертвования";
+"create_post" = "Создать пост";
+"create_donation" = "Создать сбор";
+"next" = "Далее";

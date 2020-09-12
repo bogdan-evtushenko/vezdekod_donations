@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'VKDonations' do
+  # Pods for VKDonations
+	use_frameworks!
+	pod "TinyConstraints"
+	pod 'ReSwift', '~> 5.0'
+	pod 'Toast-Swift', '~> 5.0.1'
+	pod 'Alamofire', '~> 4.9.1'
+	pod 'ObjectMapper', '~> 3.4'
+	pod 'SDWebImage', '~> 5.0'
+	pod 'Firebase/Analytics'
+	pod 'NicoProgress'
+end
