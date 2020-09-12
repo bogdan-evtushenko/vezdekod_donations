@@ -35,5 +35,9 @@ class DonationItemEpoxyModel(private val donation: Donation) :
 
         tvSum.text =
             "${(donation.amount?.div(100)?.times(progress)).toString()} out of ${donation.amount}"
+
+        btnHelp.setOnClickListener {
+            context.startActivity(Intent(DonationActivity.newIntent(context, donation)))
+        }
     }
 }

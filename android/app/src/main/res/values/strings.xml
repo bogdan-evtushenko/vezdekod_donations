@@ -41,4 +41,6 @@
     <string name="fill_all_field_correctly">Fill all fields correctly</string>
     <string name="will_end_on">Will end on %1$s</string>
     <string name="help_first">Help first</string>
+    <string name="need_to_collect">Need to collect</string>
+    <string name="rubles_sum">%1$d ₽ / %2$d ₽</string>
 </resources>

@@ -79,15 +79,13 @@ class CreateDonationWithGoalMainActivity : AppCompatActivity() {
             donation.amount = tvAmount.editText.text.toString().toIntOrNull()
             donation.goal = tvGoal.editText.text.toString()
             donation.description = tvDescription.editText.text.toString()
-            donation.author = tvAuthor.editText.text.toString()
 
             if (donation.imageUrl.isNullOrEmpty()) {
                 showToast(R.string.wait_for_the_picture_to_load)
             } else if (donation.title.isNullOrEmpty() || donation.amount == null || donation.goal.isNullOrEmpty() || donation.description.isNullOrEmpty()) {
-                // } else if (false) {
                 showToast(R.string.fill_all_field_correctly)
             } else {
-                startActivity(CreatePostActivity.newIntent(this, donation))
+                startActivity(CreateDonationWithGoalAdditionalActivity.newIntent(this, donation))
             }
         }
 
