@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "767870764847",
+    "firebase_url": "https://vkdonations-abee1.firebaseio.com",
+    "project_id": "vkdonations-abee1",
+    "storage_bucket": "vkdonations-abee1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767870764847:android:d2ac3ae6c95ede42a5c3da",
+        "android_client_info": {
+          "package_name": "com.example.vkdonations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767870764847-qah7jtsb4gvdbej7of08cuv37i0uthdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_0IbT1kEsG_X_OqFcoEFubzNZelPfUjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767870764847-qah7jtsb4gvdbej7of08cuv37i0uthdj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

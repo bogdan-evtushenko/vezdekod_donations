@@ -29,10 +29,14 @@
     <string name="for_example_for_human_treatment">For example for human treatment</string>
     <string name="description_hint">What will the money go to and how will it help someone?</string>
     <string name="description_regular_hint">For example, support for a shelter</string>
+    <string name="try_to_upload_image_one_more_time">Try to upload image one more time</string>
     <string name="donation_will_end">Donation will end</string>
     <string name="when_we_collect_the_amount">When we collect the amount</string>
     <string name="on_a_certain_date">On a certain date</string>
     <string name="expiration_date">Expiration date</string>
     <string name="select_date">Select date</string>
-
+    <string name="upload_cover">Upload cover</string>
+    <string name="wait_for_the_picture_to_load">Wait for the picture to load or load picture</string>
+    <string name="fill_all_field_correctly">Fill all fields correctly</string>
+    <string name="will_end_on">Will end on %1$s</string>
 </resources>

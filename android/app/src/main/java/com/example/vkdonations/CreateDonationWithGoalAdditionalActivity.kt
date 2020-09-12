@@ -2,12 +2,16 @@ package com.example.vkdonations
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.vkdonations.components.InputField
+import com.example.vkdonations.components.donation
+import com.example.vkdonations.models.Donation
 import kotlinx.android.synthetic.main.activity_create_donation_with_goal_additional.*
+import kotlinx.android.synthetic.main.input_field.view.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -15,6 +19,9 @@ import java.util.*
 class CreateDonationWithGoalAdditionalActivity : AppCompatActivity() {
 
     private var timestamp: Long = Date().time
+    private val donation: Donation by lazy {
+        intent?.extras?.donation ?: throw IllegalStateException()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,12 +48,12 @@ class CreateDonationWithGoalAdditionalActivity : AppCompatActivity() {
             } else if (radioOnCertainDate.isChecked && timestamp < Date().time) {
                 showToast(R.string.choose_correct_date)
             } else {
-                startActivity(
-                    Intent(
-                        this,
-                        CreatePostActivity::class.java
-                    )
-                )
+                if (radioOnCertainDate.isChecked) {
+                    donation.endDate = timestamp
+                }
+                donation.author = tvAuthor.editText.text.toString()
+                println("Here tvAuthor : ${tvAuthor.editText.text}")
+                startActivity(CreatePostActivity.newIntent(this, donation))
             }
         }
     }
@@ -78,6 +85,17 @@ class CreateDonationWithGoalAdditionalActivity : AppCompatActivity() {
 
     private fun showToast(messageId: Int) {
         Toast.makeText(this, messageId, Toast.LENGTH_SHORT).show()
+    }
+
+    companion object {
+        fun newIntent(
+            context: Context,
+            donation: Donation
+        ) = Intent(context, CreateDonationWithGoalAdditionalActivity::class.java).apply {
+            putExtras(Bundle().apply {
+                this.donation = donation
+            })
+        }
     }
 
 }

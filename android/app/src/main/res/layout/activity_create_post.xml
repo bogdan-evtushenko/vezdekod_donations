@@ -106,6 +106,7 @@
                             android:id="@+id/image"
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:scaleType="centerCrop"
                             android:src="@color/blue"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
