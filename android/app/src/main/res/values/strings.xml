@@ -10,6 +10,7 @@
     <string name="donation_with_goal">Donation with goal</string>
     <string name="main">Main</string>
     <string name="additionally">Additionally</string>
+    <string name="help_needed_monthly">Help needed monthly</string>
     <string name="when_you_have_a_goal">When you have a goal</string>
     <string name="regular_donation">Regular donation</string>
     <string name="if_help_need_monthly">If help need monthly</string>
@@ -39,4 +40,5 @@
     <string name="wait_for_the_picture_to_load">Wait for the picture to load or load picture</string>
     <string name="fill_all_field_correctly">Fill all fields correctly</string>
     <string name="will_end_on">Will end on %1$s</string>
+    <string name="help_first">Help first</string>
 </resources>

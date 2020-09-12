@@ -52,7 +52,7 @@ class CreateDonationWithGoalAdditionalActivity : AppCompatActivity() {
                     donation.endDate = timestamp
                 }
                 donation.author = tvAuthor.editText.text.toString()
-                println("Here tvAuthor : ${tvAuthor.editText.text}")
+
                 startActivity(CreatePostActivity.newIntent(this, donation))
             }
         }

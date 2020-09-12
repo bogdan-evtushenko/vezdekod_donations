@@ -13,15 +13,23 @@ import com.example.vkdonations.models.Donation
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.*
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.cvCover
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.imageLayout
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.ivCover
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.tvAmount
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.tvBankAccount
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.tvDescription
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.tvGoal
+import kotlinx.android.synthetic.main.activity_create_donation_with_goal_main.tvTitleOfDonation
+import kotlinx.android.synthetic.main.activity_create_regular_donation.*
 import kotlinx.android.synthetic.main.input_field.view.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
 import java.io.IOException
 import java.util.*
 
-
 class CreateDonationWithGoalMainActivity : AppCompatActivity() {
 
-    private val donation = Donation()
+    private val donation = Donation(isRegular = false)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,14 +79,15 @@ class CreateDonationWithGoalMainActivity : AppCompatActivity() {
             donation.amount = tvAmount.editText.text.toString().toIntOrNull()
             donation.goal = tvGoal.editText.text.toString()
             donation.description = tvDescription.editText.text.toString()
+            donation.author = tvAuthor.editText.text.toString()
 
             if (donation.imageUrl.isNullOrEmpty()) {
                 showToast(R.string.wait_for_the_picture_to_load)
-                // TODO } else if (donation.title.isNullOrEmpty() || donation.amount == null || donation.goal.isNullOrEmpty() || donation.description.isNullOrEmpty()) {
-            } else if (false) {
+            } else if (donation.title.isNullOrEmpty() || donation.amount == null || donation.goal.isNullOrEmpty() || donation.description.isNullOrEmpty()) {
+                // } else if (false) {
                 showToast(R.string.fill_all_field_correctly)
             } else {
-                startActivity(CreateDonationWithGoalAdditionalActivity.newIntent(this, donation))
+                startActivity(CreatePostActivity.newIntent(this, donation))
             }
         }
 

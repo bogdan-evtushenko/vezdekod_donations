@@ -1,6 +1,10 @@
 package com.example.vkdonations.models
 
+import android.content.Context
+import com.example.vkdonations.R
 import java.io.Serializable
+import java.text.SimpleDateFormat
+import java.util.*
 
 data class Donation(
     var id: String? = null,
@@ -15,3 +19,18 @@ data class Donation(
     var isRegular: Boolean? = null,
     var endDate: Long? = null
 ) : Serializable
+
+fun createSubtitleFromDonation(donation: Donation, context: Context): String {
+    return donation.author + if (donation.isRegular != false) {
+        " · ${context.getString(R.string.help_needed_monthly)}"
+    } else {
+        if (donation.endDate == null) {
+            ""
+        } else {
+            " · ${context.getString(
+                R.string.will_end_on,
+                SimpleDateFormat("d MMMM yyyy").format(Date(donation.endDate!!))
+            )}"
+        }
+    }
+}
