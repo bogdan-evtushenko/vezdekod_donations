@@ -3,6 +3,13 @@ import 'express-async-errors'
 import {getRoutes} from './routes'
 
 const bodyParser = require('body-parser')
+const cors = require("cors");
+
+const corsOptions = {
+    origin: '*',
+};
+
+
 
 const config = require('../config.json')
 const port = config.port
@@ -11,6 +18,7 @@ const port = config.port
 function startServer() {
     const app = express()
 
+    app.use(cors(corsOptions));
     app.use(bodyParser.json());
 
     app.use('/api', getRoutes())
