@@ -43,3 +43,12 @@ response:
     id: string
 }
 ```
+
+* Route GET: http://161.35.21.226:3000/api/android/reset-db
+Хак для очистки базы данных
+response: 
+```
+{
+    success: true | false,
+}
+```

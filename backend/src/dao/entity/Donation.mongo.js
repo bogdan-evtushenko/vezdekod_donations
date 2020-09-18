@@ -29,4 +29,10 @@ export default class DonationRepository extends BaseRepository {
 
         return result.insertedIds[0]
     }
+
+    async deleteAll() {
+        const collection = await this.getCollection()
+
+        await collection.deleteMany({})
+    }
 }

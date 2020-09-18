@@ -7,6 +7,7 @@ function getAndroidRoutes() {
     const router = express.Router()
     router.get('/', getDonates)
     router.post('/new', createNewDonate)
+    router.get('/reset-db', resetDb)
     return router
 }
 
@@ -32,6 +33,14 @@ async function createNewDonate(req, res) {
     res.send(JSON.stringify({
         success: true,
         id: id
+    }))
+}
+
+async function resetDb(req, res) {
+    await donationRepository.deleteAll()
+
+    res.send(JSON.stringify({
+        success: true
     }))
 }
 
